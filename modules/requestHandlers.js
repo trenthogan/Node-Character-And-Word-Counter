@@ -23,6 +23,29 @@ function favicon(response) {
   response.end(img,'binary');
 }
 
+function asset(pathname, pathext, response){
+
+	//Handle assets
+ 			switch(pathext) {
+		        case '.css':
+		            response.writeHead(200, {"Content-Type": "text/css"});
+		            fs.readFile('./' + pathname, 'utf8', function(err, fd) {
+		                response.end(fd);
+		            });
+		            console.log('Routed for Cascading Style Sheet '+ pathname +' Successfully\n');
+		        break;
+		        case '.js':
+		            response.writeHead(200, {"Content-Type": "text/javascript"});
+		            fs.readFile('./' + pathname, 'utf8', function(err, fd) {
+		                response.end(fd);
+		            });
+		            console.log('Routed for Javascript '+ pathname +' Successfully\n');
+		        break;
+		    }
+
+}
+
 
 exports.home = home;
 exports.favicon = favicon;
+exports.asset = asset;

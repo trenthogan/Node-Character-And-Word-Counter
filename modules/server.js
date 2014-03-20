@@ -12,7 +12,7 @@ function start(route){
 		console.log("Request for " + pathname + " recieved.");
 
 		//Pass the pathname to the router
-		route(pathname);
+		route(pathname, response);
 
 		//Send http status and content type.
 		response.writeHead(200, {"Content-Type": "text/html"});

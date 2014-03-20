@@ -1,5 +1,25 @@
- function route(pathname){
- 	console.log("About to route a request for " + pathname);
+ var requestHandlers = require("../modules/requestHandlers");
+
+ function route(pathname, response){
+
+ 	//This app only has one page so check we are in the route or redirect
+ 	if(pathname  === '/'){
+
+ 			console.log("Welcome To The Home Page");
+		    response.writeHead(404, {"Content-Type": "text/plain"});
+		    response.write("Welcome To The Home Page");
+		    response.end();
+
+ 	}else{
+
+ 		console.log("No request handler found for " + pathname);
+	    response.writeHead(404, {"Content-Type": "text/plain"});
+	    response.write("404 Not found");
+	    response.end();
+
+
+ 	}
+
 
 
  }

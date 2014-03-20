@@ -1,7 +1,39 @@
 .input-container{
-
+	
+	position: relative;
+	margin: 2em auto;
 	width: 90%;
-	height: 5em;	
+	height: 8em;	
 	background-color: #000;
+	max-width: 1200px;
+
+}
+
+.main-input{
+
+	position: relative;
+	width: 94%;
+	height: 4em;
+	margin: 2.5em 3%;
+
+
+}
+
+.character-count-container{
+
+	position: relative;
+	margin: 2em auto;
+	width: 90%;
+	height: 8em;	
+	max-width: 1200px;
+
+}
+
+.character-count-container > p{
+
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	
 
 }

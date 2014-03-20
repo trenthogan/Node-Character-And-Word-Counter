@@ -14,10 +14,6 @@ function start(route){
 		//Pass the pathname to the router
 		route(pathname, response);
 
-		//Send http status and content type.
-		response.writeHead(200, {"Content-Type": "text/html"});
-		response.write("Hello World");
-		response.end();
 
 	}
 

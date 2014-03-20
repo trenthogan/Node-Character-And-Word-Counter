@@ -1,14 +1,12 @@
- var requestHandlers = require("../modules/requestHandlers");
+var requestHandlers = require("../modules/requestHandlers");
+var routes = require("../modules/routes");
 
  function route(pathname, response){
 
  	//This app only has one page so check we are in the route or redirect
- 	if(pathname  === '/'){
+ 	if(typeof routes.returnRoutes(pathname) === 'function'){
 
- 			console.log("Welcome To The Home Page");
-		    response.writeHead(404, {"Content-Type": "text/plain"});
-		    response.write("Welcome To The Home Page");
-		    response.end();
+ 			routes.returnRoutes(pathname)(response);
 
  	}else{
 

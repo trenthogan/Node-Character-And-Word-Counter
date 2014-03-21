@@ -1,6 +1,7 @@
 //Required Node http modules
 var http = require("http");
 var url = require("url");
+var open = require('open');
 
 //run start function when module is loaded
 function start(route){
@@ -18,6 +19,7 @@ function start(route){
 	}
 
 	http.createServer(onRequest).listen(8888);
+	open('http://localhost:8888/');
 	console.log("Server Has Started.");
 
 }

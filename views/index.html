@@ -16,6 +16,22 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
+        <div class="content-container">
+
+            <label class="topcoat-radio-button">
+              <input type="radio" name="characterCount" value="characterCount" id="character-count" ng-model="typeOfCount" ng-Change="characterCountReset()">
+              <div class="topcoat-radio-button__checkmark"></div>
+              Character Count
+            </label>
+
+            <label class="topcoat-radio-button">
+              <input type="radio" value="wordCount" name="wordCount" id="word-count" ng-model="typeOfCount" ng-Change="characterCountReset()">
+              <div class="topcoat-radio-button__checkmark"></div>
+              Word Count 
+            </label>
+
+        </div>
+
 
         <div class="input-container">
             
@@ -23,7 +39,7 @@
 
         </div>
 
-        <div class="character-count-container">
+        <div class="content-container">
 
             <p class="character-count">{{counter}}</p>
 

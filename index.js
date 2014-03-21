@@ -5,3 +5,4 @@ var requestHandlers = require("./modules/requestHandlers");
 
 //Start Server
 server.start(router.route);
+

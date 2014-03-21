@@ -19,21 +19,26 @@
 
 }
 
-.character-count-container{
+.content-container{
 
 	position: relative;
 	margin: 2em auto;
-	width: 90%;
-	height: 8em;	
+	width: 90%;	
 	max-width: 1200px;
 
 }
 
-.character-count-container > p{
+.content-container > p{
 
 	text-align: center;
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 18px;
-	
+	font-size: 20px;
+
+
+}
+
+.content-container > .topcoat-radio-button{
+
+		margin-left: 2%;
 
 }

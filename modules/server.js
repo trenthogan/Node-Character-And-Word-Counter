@@ -19,7 +19,7 @@ function start(route){
 	}
 
 	http.createServer(onRequest).listen(8888);
-	//open('http://localhost:8888/');
+	open('http://localhost:8888/');
 	console.log("Server Has Started.");
 
 }

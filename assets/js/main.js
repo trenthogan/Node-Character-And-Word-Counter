@@ -36,7 +36,7 @@ function CharacterCount($scope){
 
 		}
 
-	}
+	};
 
 
 	$scope.characterCountReset = function(){
@@ -44,7 +44,7 @@ function CharacterCount($scope){
 
 		$scope.update();
 
-	}
+	};
 
 
 

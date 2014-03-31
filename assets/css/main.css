@@ -1,9 +1,9 @@
 .input-container{
 	
 	position: relative;
-	margin: 2em auto;
+	margin: 2rem auto;
 	width: 90%;
-	height: 8em;	
+	height: 16rem;	
 	background-color: #000;
 	max-width: 1200px;
 
@@ -13,8 +13,8 @@
 
 	position: relative;
 	width: 94%;
-	height: 4em;
-	margin: 2.5em 3%;
+	height: 12rem;
+	margin: 2rem 3%;
 
 
 }
@@ -22,7 +22,7 @@
 .content-container{
 
 	position: relative;
-	margin: 2em auto;
+	margin: 2rem auto;
 	width: 90%;	
 	max-width: 1200px;
 
@@ -31,7 +31,7 @@
 .content-container > p{
 
 	text-align: center;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: helvetica, arial, sans-serif;
 	font-size: 20px;
 
 

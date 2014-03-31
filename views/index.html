@@ -35,13 +35,24 @@
 
         <div class="input-container">
             
-            <input type="text" class="topcoat-text-input--large main-input" value="" placeholder="Insert Your Text Here." ng-model="input" ng-change="update()">
+            <textarea class="topcoat-textarea--large main-input" rows="6" cols="36" placeholder="Insert Your Text Here." ng-model="input" ng-change="update()"></textarea>
 
         </div>
 
         <div class="content-container">
 
             <p class="character-count">{{counter}}</p>
+
+        </div>
+        <div class="content-container">
+
+            <h3>Common Character Limits</h3>
+
+            <ul>
+                <li>Google Title Tag should be between 70 characters.</li>
+                <li>Google Meta Descriptions should be between 150-160 characters.</li>
+                <li>Twitter's character limit is 140.</li>
+            </ul>
 
         </div>
        

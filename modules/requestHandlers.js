@@ -41,6 +41,20 @@ function asset(pathname, pathext, response){
 		            });
 		            console.log('Routed for Javascript '+ pathname +' Successfully\n');
 		        break;
+		        case '.otf':
+		            response.writeHead(200, {"Content-Type": "font/opentype"});
+		            fs.readFile('./' + pathname, 'utf8', function(err, fd) {
+		                response.end(fd);
+		            });
+		            console.log('Routed for Otf Font '+ pathname +' Successfully\n');
+		        break;
+		        case '.ttf':
+		            response.writeHead(200, {"Content-Type": "font/opentype"});
+		            fs.readFile('./' + pathname, 'utf8', function(err, fd) {
+		                response.end(fd);
+		            });
+		            console.log('Routed for Otf Font '+ pathname +' Successfully\n');
+		        break;
 		    }
 
 }

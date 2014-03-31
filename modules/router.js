@@ -12,7 +12,7 @@ var path = require('path');
 
  	}
 
- 	else if(pathext === '.js' || pathext === '.css'){
+ 	else if(pathext === '.js' || pathext === '.css' || pathext === '.otf'){
  			//The path contains a .css or .js file serve it accordingly
  			console.log("Request type asset detected for " + pathname);
  			requestHandlers.asset(pathname, pathext, response);
